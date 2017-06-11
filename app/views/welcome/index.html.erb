@@ -1,5 +1,5 @@
-<div class="row">
-<div class="col-md-2">
+<div class="row index-web">
+<div class="col-md-2 sidenav">
     <img src="https://ooo.0o0.ooo/2017/05/21/592187f12feac.png" alt="logo.png" title="logo.png" class="img-responsive" />
     <br>
     <div class="panel-group text-center">
@@ -57,23 +57,25 @@
                 <% else %>
                 <div class="panel-heading">
                     <h4 class="panel-title">
-
-                          Hi!, <%= current_user.email %>
-                      
-                          <%= link_to("我的订单", account_orders_path ) %><br>
+                    Hi!, <%= current_user.email %> <br><br>
+                    <%= link_to("我的订单", account_orders_path ) %><br><br>
                     <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %><br>
                     </h4>
-
                   </div>
-
-            <% end %>
+                <% end %>
         </div>
         <!-- 注册，登录，Admin选项 -->
-
-    </div>
+      </div>
+      <div>
+          <p>每个人都缺乏点什么，我们才会瞬间就不快乐……</p>
+          <p>单纯很难，包袱很多......</p>
+          <p>已经很勇敢，还是会难过......</p>
+          <p>在这里，通过手绘作品的天真和纯净，您可以用另一种方式去看世界，如茶香，如诗行。</p>
+          <p>今天【绘生活】就这么成立了，与您的每一次遇见，都是缘。无论缘分深浅，我们会做得更好！</p>
+      </div>
 </div>
 <!-- 首页右边的图片组 -->
-<div class="col-md-10">
+<div class="col-md-10 img-wall">
     <div id="layout">
         <ul>
             <li>
