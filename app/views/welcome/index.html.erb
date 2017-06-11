@@ -55,34 +55,17 @@
                     </h4>
                 </div>
                 <% else %>
-                    <% if current_user.is_admin? %>
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <div class="dropdown1">
-                                    Hi!, <%= current_user.email %>
-                                    <span class="caret"></span>
-                                    <div class="dropdown-content1">
-                                        <%= link_to("My orders", account_orders_path ) %>
-                                        <%= link_to("Admin 菜单", admin_products_path) %>
-                                        <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %>
-                                    </div>
-                                </h4>
-                            </div>
-                        <% else %>
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <div class="dropdown1">
-                                        Hi!, <%= current_user.email %>
-                                        <span class="caret"></span>
-                                        <div class="dropdown-content1">
-                                            <%= link_to("My orders", account_orders_path ) %>
-                                            <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %>
-                                        </div>
-                                    </div>
-                                </div>
-                            </h4>
-                        </div>
-                    <% end %>
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+
+                          Hi!, <%= current_user.email %>
+                      
+                          <%= link_to("我的订单", account_orders_path ) %><br>
+                    <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %><br>
+                    </h4>
+
+                  </div>
+
             <% end %>
         </div>
         <!-- 注册，登录，Admin选项 -->
