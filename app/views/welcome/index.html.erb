@@ -11,6 +11,35 @@
                 </h4>
             </div>
         </div>
+        <!-- About Us -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#">ABOUT US</a>
+                </h4>
+            </div>
+        </div>
+        <!-- 作品集 -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="text-center" href="/products" >作品集
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <!-- 购物车 -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <!-- <a href="/carts">购物车</a> -->
+                    <%= link_to carts_path do %>
+                        购物车<i class="fa fa-shopping-cart"></i> ( <%= current_cart.products.count %>)
+                    <% end %>
+                </h4>
+            </div>
+        </div>
+
     </div>
 </div>
 <!-- 首页右边的图片组 -->
