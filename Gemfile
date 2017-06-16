@@ -51,6 +51,8 @@ gem 'will_paginate-bootstrap'
 gem 'seo_helper'
 
 gem 'jquery-turbolinks'
+gem 'mina', require: false
+gem 'mina-puma', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
