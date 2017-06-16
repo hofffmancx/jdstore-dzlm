@@ -14,7 +14,7 @@ require 'mina/rbenv'  # for rbenv support. (https://rbenv.org)
 set :application_name, 'jdstore-dzlm'
 set :domain, 'root@106.14.202.187'
 set :deploy_to, '/var/www/jdstore-dzlm'
-set :repository, 'git@github.com:hofffmancx/jdstore-dzlm.git'
+set :repository, 'https://github.com/hofffmancx/jdstore-dzlm.git'
 set :branch, 'master'
 
 # Optional settings:
