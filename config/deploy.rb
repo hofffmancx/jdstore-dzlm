@@ -12,7 +12,7 @@ require 'mina/rbenv'  # for rbenv support. (https://rbenv.org)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
 set :application_name, 'jdstore-dzlm'
-set :domain, 'apps@xx.xx.xx.xx'
+set :domain, 'apps@106.14.202.187'
 set :deploy_to, '/var/www/jdstore-dzlm'
 set :repository, 'git@github.com:hofffmancx/jdstore-dzlm.git'
 set :branch, 'master'
